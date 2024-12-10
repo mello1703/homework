@@ -1,7 +1,7 @@
 from src.masks import get_mask_account, get_mask_card_number
 
 
-def mask_account_card(nums: str) -> str :
+def mask_account_card(nums: str) -> str:
     """ Функция, маскирующая счет и карту. """
     if "Счет" in nums:
         return f"Счет {get_mask_account(nums)}"
@@ -10,11 +10,11 @@ def mask_account_card(nums: str) -> str :
         new_card = nums.replace(nums[-16:], cards)
         return new_card
 
+
 print(mask_account_card("Maestro 1596837868705199"))
 print(mask_account_card("Счет 64686473678894779589"))
 print(mask_account_card("MasterCard 7158300734726758"))
 print(mask_account_card("Счет 35383033474447895560"))
-
 
 
 def get_new_data(old_data: str) -> str:
