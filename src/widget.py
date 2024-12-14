@@ -17,10 +17,11 @@ print(mask_account_card("MasterCard 7158300734726758"))
 print(mask_account_card("Счет 35383033474447895560"))
 
 
-def get_new_data(old_data: str) -> str:
+def get_data(old_data: str) -> str:
     """ Функция принимает строку и выводит дату в формате ДД.ММ.ГГ """
     data_slize = old_data[0:10].split("-")
     return ".".join(data_slize[::-1])
 
 
-print(get_new_data("2024-03-11T02:26:18.671407"))
+if __name__ == '__main__':
+    print(get_data("2024-03-11T02:26:18.671407"))
