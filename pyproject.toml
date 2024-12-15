@@ -47,6 +47,3 @@ exclude = '''
 line_length=119
 multi_line_output = 3
 
-[tool.flake8]
-ignore =501
-max-line_length=119
