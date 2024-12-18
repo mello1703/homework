@@ -28,5 +28,4 @@ def sort_by_date(inform_dict: list[dict[str, Any]], reverse: bool = True) -> lis
 
 print(filter_by_state(data_list))  # Вызов 1 функции
 
-
-print(sort_by_date(data_list)) # Вызов 2 функции
+print(sort_by_date(data_list))  # Вызов 2 функции
