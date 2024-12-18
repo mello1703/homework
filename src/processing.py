@@ -1,6 +1,6 @@
 from typing import Any
 
-info_dict = [
+data_list = [
     {"id": 41428829, "state": "EXECUTED", "date": "2019-07-03T18:35:29.512364"},
     {"id": 939719570, "state": "EXECUTED", "date": "2018-06-30T02:08:58.425572"},
     {"id": 594226727, "state": "CANCELED", "date": "2018-09-12T21:27:25.241689"},
@@ -26,8 +26,7 @@ def sort_by_date(inform_dict: list[dict[str, Any]], reverse: bool = True) -> lis
     return sorted_inform_state
 
 
-print(filter_by_state(info_dict))
+print(filter_by_state(data_list))  # Вызов 1 функции
 
 
-sorted_inform_state_char = sort_by_date(info_dict)
-print(sorted_inform_state_char)
+print(sort_by_date(data_list)) # Вызов 2 функции
