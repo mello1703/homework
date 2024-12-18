@@ -10,7 +10,7 @@ info_dict = [
 
 def filter_by_state(inform_dict: list[dict[str, Any]], state_id: str = "EXECUTED") -> list[dict[str, Any]]:
     """Функция, которая принмает на вход список словарей и значений для ключа
-    state и выдает новый список с заданным ключом"""
+    state и выдает новый список с заданным ключом."""
 
     list_state = []
 
