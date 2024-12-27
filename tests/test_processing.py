@@ -1,10 +1,13 @@
 import pytest
 
-
 from src.processing import filter_by_state, sort_by_date
-from tests.conftest import (info_dict_ident_dates_sort,
-                            info_dict_sort_res_false, info_dict_sort_res_true, info_dict_sorted_1,
-                            info_dict_sorted_2, )
+from tests.conftest import (
+    info_dict_ident_dates_sort,
+    info_dict_sort_res_false,
+    info_dict_sort_res_true,
+    info_dict_sorted_1,
+    info_dict_sorted_2
+)
 
 
 @pytest.fixture

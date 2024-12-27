@@ -3,7 +3,6 @@ import pytest
 from src.masks import get_mask_card_number
 from src.widget import get_data, get_mask_account, mask_account_card
 
-
 """Параметризация функции get_mask_account"""
 
 
