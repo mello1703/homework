@@ -26,8 +26,8 @@ def sort_by_date(inform_dict: list[dict[str, Any]], reverse: bool = True) -> lis
     return sorted_inform_state
 
 
-print(filter_by_state(info_dict))
-
-
-sorted_inform_state_char = sort_by_date(info_dict)
-print(sorted_inform_state_char)
+# print(filter_by_state(info_dict))
+#
+#
+# sorted_inform_state_char = sort_by_date(info_dict)
+# print(sorted_inform_state_char)
