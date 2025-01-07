@@ -51,3 +51,9 @@ def test_card_number_generator(start=1, end=5):
     assert next(generator) == "0000 0000 0000 0003"
     assert next(generator) == "0000 0000 0000 0004"
     assert next(generator) == "0000 0000 0000 0005"
+
+
+@pytest.mark.parametrize('index, expected', [(0, 'Перевод организации'), (1, 'Перевод со счета на счет')])
+def test_transaction_descriptions_3(index, expected):
+    descriptions = list(transaction_descriptions(transactions))
+    assert descriptions[index] == expected
