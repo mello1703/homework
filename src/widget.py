@@ -4,7 +4,7 @@ from src.masks import get_mask_account, get_mask_card_number
 def mask_account_card(nums: str) -> str:
     """ Функция, маскирующая счет и карту. """
     if "Счет" in nums:
-        return f"Счет {get_mask_account(nums)}"
+        return f"Счет {get_mask_account(nums[5:])}"
     else:
         cards = get_mask_card_number(nums[-16:])
         new_card = nums.replace(nums[-16:], cards)
