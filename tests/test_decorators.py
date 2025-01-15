@@ -6,7 +6,7 @@ from src.decorators import log
 
 def test_log_correct(capsys):
     # "Проверка корректного выполнения функции"
-    @log(filename="test_log.txt")
+    @log(filename="test_mylog.txt")
     def my_function(x, y):
         return x + y
 
@@ -17,7 +17,7 @@ def test_log_correct(capsys):
 
 def test_log_different_types_str(capsys):
     # "Проверка ошибки: missing 2 required positional arguments: 'x' and 'y'."
-    @log(filename="test_log.txt")
+    @log(filename="test_mylog.txt")
     def my_function(x, y):
         return x + y
 
@@ -30,7 +30,7 @@ def test_log_different_types_str(capsys):
 
 def test_log_lack_argument(capsys):
     # "Проверка ошибки: missing 1 required positional argument: 'y'."
-    @log(filename="test_log.txt")
+    @log(filename="test_mylog.txt")
     def my_function(x, y):
         return x + y
 
@@ -43,7 +43,7 @@ def test_log_lack_argument(capsys):
 
 def test_log_different_types_argument(capsys):
     # "Проверка ошибки: unsupported operand type(s) for +: 'int' and 'str'."
-    @log(filename="test_log.txt")
+    @log(filename="test_mylog.txt")
     def my_function(x, y):
         return x + y
 
@@ -56,7 +56,7 @@ def test_log_different_types_argument(capsys):
 
 def test_log_different_types_no_argument(capsys):
     # "Проверка ошибки: missing 2 required positional arguments: 'x' and 'y'."
-    @log(filename="test_log.txt")
+    @log(filename="test_mylog.txt")
     def my_function(x, y):
         return x + y
 
