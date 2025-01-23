@@ -9,3 +9,18 @@ my_function called with args: ('a', 'b'), kwargs:{}. Result: ab
 my_function error: TypeError. Inputs: (1,), {}
 my_function error: TypeError. Inputs: (1, ''), {}
 my_function error: TypeError. Inputs: (), {}
+my_function called with args: (1, 2), kwargs:{}. Result: 3
+my_function called with args: ('a', 'b'), kwargs:{}. Result: ab
+my_function error: TypeError. Inputs: (1,), {}
+my_function error: TypeError. Inputs: (1, ''), {}
+my_function error: TypeError. Inputs: (), {}
+my_function called with args: (1, 2), kwargs:{}. Result: 3
+my_function called with args: ('a', 'b'), kwargs:{}. Result: ab
+my_function error: TypeError. Inputs: (1,), {}
+my_function error: TypeError. Inputs: (1, ''), {}
+my_function error: TypeError. Inputs: (), {}
+my_function called with args: (1, 2), kwargs:{}. Result: 3
+my_function called with args: ('a', 'b'), kwargs:{}. Result: ab
+my_function error: TypeError. Inputs: (1,), {}
+my_function error: TypeError. Inputs: (1, ''), {}
+my_function error: TypeError. Inputs: (), {}
