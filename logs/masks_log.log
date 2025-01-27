@@ -1,4 +1,4 @@
 INFO: masks.py: get_mask_card_number 18: 2025-01-27 13:14:09,219 - Создаю маску номера карты
 ERROR: masks.py: get_mask_card_number 20: 2025-01-27 13:14:09,219 - Неправильный номер карты
 INFO: masks.py: get_mask_account 28: 2025-01-27 13:14:09,219 - Создаю маску номера счета
-ERROR: masks.py: get_mask_account 30: 2025-01-27 13:14:09,219 - Неправильный номер счета
+ERROR: masks.py: get_mask_account 30: 2025-01-27 13:14:09,219 - Неправильный номер с
