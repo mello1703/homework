@@ -88,9 +88,9 @@ def filter_by_currency(transactions: list[dict], cod_curr: str) -> Generator[dic
             yield key
 
 
-usd_transaction = filter_by_currency(transactions, "USD")
-for transact in range(3):
-    print(next(usd_transaction))
+# usd_transaction = filter_by_currency(transactions, "USD")
+# for transact in range(3):
+#     print(next(usd_transaction))
 
 
 def transaction_descriptions(transactions: list[dict]) -> Generator:
@@ -99,9 +99,9 @@ def transaction_descriptions(transactions: list[dict]) -> Generator:
         yield i["description"]
 
 
-descriptions = transaction_descriptions(transactions)
-for transact in range(5):
-    print(next(descriptions))
+# descriptions = transaction_descriptions(transactions)
+# for transact in range(5):
+#     print(next(descriptions))
 
 
 def card_number_generator(start: int, end: int) -> Generator:
@@ -110,5 +110,5 @@ def card_number_generator(start: int, end: int) -> Generator:
         yield ' '.join("{:016}".format(number)[i:i + 4] for i in range(0, 16, 4))
 
 
-for card_number in card_number_generator(1, 5):
-    print(card_number)
+# for card_number in card_number_generator(1, 5):
+#     print(card_number)

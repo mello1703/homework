@@ -76,11 +76,6 @@ def main():
 
     print('Распечатываю итоговый список транзакций...')
 
-    if len(new_filter_trans) == 0:
-        print('Не найдено ни одной транзакции, подходящей под ваши условия фильтрации')
-
-    print(f'Всего банковских операций в выборке: {len(new_filter_trans)}')
-
     if menu == 1:
         for x in new_filter_trans:
             if x["description"] == "Открытие вклада":
