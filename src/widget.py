@@ -11,10 +11,10 @@ def mask_account_card(nums: str) -> str:
         return new_card
 
 
-print(mask_account_card("Maestro 1596837868705199"))
-print(mask_account_card("Счет 64686473678894779589"))
-print(mask_account_card("MasterCard 7158300734726758"))
-print(mask_account_card("Счет 35383033474447895560"))
+# print(mask_account_card("Maestro 1596837868705199"))
+# print(mask_account_card("Счет 64686473678894779589"))
+# print(mask_account_card("MasterCard 7158300734726758"))
+# print(mask_account_card("Счет 35383033474447895560"))
 
 
 def get_data(old_data: str) -> str:
